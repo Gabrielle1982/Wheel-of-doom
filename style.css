@@ -1,6 +1,32 @@
 .intro{
+    height: 500px;
 background-color: #e6d8d8;
+    display:flex;
+    flex-direction: column;
 }
 .juego{
     background-color: brown;
+}
+h1 { 
+    margin: auto;
+    font-size: 160px;
+   margin-bottom: 10px;
+
+}
+.play-mode {
+    margin: auto;
+    margin-top: 30px;
+    gap: 50px;
+    display: flex;
+
+}
+.night-mode{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.play, .instructions{
+    width: 220px;
+    height: 50px;
+    font-size: x-large;
 }
