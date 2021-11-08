@@ -1,11 +1,6 @@
 .intro{
-background-color: black;
-height: 100%;
-width: 100% ;
+background-color: #e6d8d8;
 }
 .juego{
     background-color: brown;
-}
-h1{
-    background-color: chartreuse;
 }
