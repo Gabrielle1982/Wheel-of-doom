@@ -4,15 +4,18 @@ background-color: #e6d8d8;
     display:flex;
     flex-direction: column;
 }
-.juego{
+.juego {
     background-color: brown;
+    display: flex;
+    flex-direction: column;
 }
 h1 { 
     margin: auto;
-    font-size: 160px;
+    font-size: 200px;
    margin-bottom: 10px;
-
+   font-family: 'Jim Nightshade', cursive;
 }
+
 .play-mode {
     margin: auto;
     margin-top: 30px;
@@ -20,13 +23,19 @@ h1 {
     display: flex;
 
 }
-.night-mode{
+.night-mode, .header{
     display: flex;
     justify-content: flex-end;
     gap: 10px;
+    padding: 20px;
 }
+
 .play, .instructions{
     width: 220px;
     height: 50px;
     font-size: x-large;
+}
+
+.texto {
+    margin: auto;
 }
