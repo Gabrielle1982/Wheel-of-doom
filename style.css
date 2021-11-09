@@ -1,10 +1,30 @@
+*{
+    font-family: 'Jim Nightshade', cursive;
+}
+
 .intro{
     height: 500px;
-background-color: #e6d8d8;
+    background-color: black;
     display:flex;
     flex-direction: column;
+    color:red;
 
 }
+.play-mode {
+    margin: auto;
+    margin-top: 30px;
+    gap: 50px;
+    display: flex;
+
+}
+.play{
+    width: 220px;
+    height: 50px;
+    font-size: x-large;
+}
+
+
+/* --------juego---------  */
 section{
     background-color: brown;
 }
@@ -14,34 +34,54 @@ section{
     flex-direction: column;
     align-items: center;
 }
+.juego > *{
+    margin-top:10px;
+ }
 h1 { 
     margin: auto;
     font-size: 200px;
-   margin-bottom: 10px;
-   font-family: 'Jim Nightshade', cursive;
+    margin-bottom: 10px;
+    font-family: 'Jim Nightshade', cursive;
 }
 
-.play-mode {
-    margin: auto;
-    margin-top: 30px;
-    gap: 50px;
-    display: flex;
-
-}
-.night-mode, .header{
+/* .night-mode, .header{
     display: flex;
     justify-content: flex-end;
     gap: 10px;
     padding: 20px;
+} */
+
+
+h2 {
+    font-size: 30px;
+    
 }
 
-.play, .instructions{
-    width: 220px;
-    height: 50px;
-    font-size: x-large;
+ul{
+    display:flex;
+    list-style: none;
+    gap:10px;
+    flex-wrap:wrap ;
+    justify-content: center;
+    font-size: 25px;
 }
 
-.texto {
-    margin: auto;
+img{
+    height:600px;
 }
 
+.botones button{
+    font-size: 20px;
+    width: 150px;
+
+}
+
+.botones{
+    display:flex;
+    gap:50px;
+    background-color: black;
+    justify-content: center;
+    width: 100%;
+    height:60px;
+    margin-top: 0;
+}
