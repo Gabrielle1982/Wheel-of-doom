@@ -3,11 +3,16 @@
 background-color: #e6d8d8;
     display:flex;
     flex-direction: column;
+
+}
+section{
+    background-color: brown;
 }
 .juego {
-    background-color: brown;
+    
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 h1 { 
     margin: auto;
@@ -39,3 +44,4 @@ h1 {
 .texto {
     margin: auto;
 }
+
