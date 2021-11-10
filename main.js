@@ -24,5 +24,8 @@ $(document).ready(function () {
 }
 
 $('.start').on('click', pickCoder);
+$('.reset').on('click', pickCoder);
+    $('.resultado').reset(randomName);
 
 });
+
