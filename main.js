@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 
-     const coders= [ 'Candy', 'Gabrielle', 'Carmen', 'Laura .C', 'Alexia', 
+     let coders= [ 'Candy', 'Gabrielle', 'Carmen', 'Laura .C', 'Alexia', 
      'Alisa', 'Kristina', 'Helen', 'Ana', 'Anna', 'Yuliya', 'Desiree', 'Laura M.', 'Valentina', 'Gracia', 
      'Joana', 'Faby', 'Marisa', 'Judith', 'Sonia', 'Tamara', 'Rosa', 'Sandra', 'Sara', 'Marta',
      ];
@@ -27,7 +27,14 @@ $('.start').on('click', pickCoder);
 
 // BORRAR
 function clearResult() {
+    if(coders.length===0){
+        coders=[ 'Candy', 'Gabrielle', 'Carmen', 'Laura .C', 'Alexia', 
+        'Alisa', 'Kristina', 'Helen', 'Ana', 'Anna', 'Yuliya', 'Desiree', 'Laura M.', 'Valentina', 'Gracia', 
+        'Joana', 'Faby', 'Marisa', 'Judith', 'Sonia', 'Tamara', 'Rosa', 'Sandra', 'Sara', 'Marta',
+        ];
+    }
     $('.resultado').empty();
+
 }
 
 $('.reset').on("click", clearResult);
