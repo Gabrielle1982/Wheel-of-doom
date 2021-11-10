@@ -24,12 +24,14 @@ $(document).ready(function () {
 $('.start').on('click', pickCoder);
 
 
+
 // BORRAR
 function clearResult() {
-    $('.resultado').empty()
-;
+    $('.resultado').empty();
 }
 
 $('.reset').on("click", clearResult);
 
+
 });
+
