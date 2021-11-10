@@ -11,6 +11,10 @@ $(document).ready(function () {
         var randomName=coders[random];
         console.log(randomName);
 
+        
+
+        coders.splice(random,1);
+
         coders.forEach( t => 
             $('.resultado').html(
                 randomName
