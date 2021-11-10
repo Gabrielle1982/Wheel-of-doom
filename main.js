@@ -10,9 +10,7 @@ $(document).ready(function () {
         let random=  Math.floor((Math.random() * coders.length));
         var randomName=coders[random];
         console.log(randomName);
-
         
-
         coders.splice(random,1);
 
         coders.forEach( t => 
@@ -24,5 +22,14 @@ $(document).ready(function () {
 }
 
 $('.start').on('click', pickCoder);
+
+
+// BORRAR
+function clearResult() {
+    $('.resultado').empty()
+;
+}
+
+$('.reset').on("click", clearResult);
 
 });
