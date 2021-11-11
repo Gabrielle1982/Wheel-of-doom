@@ -28,6 +28,7 @@ $(document).ready(function () {
             $('.resultado').html(
                 randomName
             )
+
          ),
          coders.forEach( t => 
             $("li").hide()
@@ -35,6 +36,7 @@ $(document).ready(function () {
 
         }       
  
+
 
 
 
