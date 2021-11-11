@@ -13,19 +13,29 @@
 }
 .play-mode {
     margin: auto;
-    margin-top: -40px;
-    gap: 50px;
+    margin-top: -150px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    font-size: 70px;
 
 }
+
 .play{
     width: 220px;
     height: 50px;
     font-size: x-large;
 }
 
+a {
+    text-decoration: none;
+}
+
+
 .boton{
-    height: 50px;
+    height: 150px;
+    
 }
 /* --------juego---------  */
 section{
@@ -36,6 +46,7 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 900px;
 }
 .juego > *{
     margin-top:10px;
@@ -43,7 +54,7 @@ section{
 h1 { 
     margin: auto;
     font-size: 400px;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
     font-family: 'Jim Nightshade', cursive;
 }
 
@@ -56,7 +67,8 @@ h1 {
 
 
 h2 {
-    font-size: 30px;
+    font-size: 60px;
+    padding-top: 40px;
     
 }
 
