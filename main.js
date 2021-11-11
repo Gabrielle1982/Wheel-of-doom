@@ -15,26 +15,27 @@ $(document).ready(function () {
      
 
      function pickCoder () {
+         
         let random=  Math.floor((Math.random() * coders.length));
         let randomName=coders[random];
         console.log(randomName);
         
         coders.splice(random,1);
+        
 
+     
         coders.forEach( t => 
             $('.resultado').html(
                 randomName
             )
-         );
-
+         ),
          coders.forEach( t => 
-            $('#names').hide(
-                randomName
-            )
-         );
+            $("li").hide()
+         )
 
-     
-}
+        }       
+ 
+
 
 
 $('.start').on('click', pickCoder);
@@ -54,6 +55,7 @@ function clearResult() {
         ];
     }
     $('.resultado').empty();
+    $('li').fadeIn();
 
 }
 
