@@ -24,7 +24,9 @@
     font-size: x-large;
 }
 
-
+.boton{
+    height: 50px;
+}
 /* --------juego---------  */
 section{
     background-color: brown;
