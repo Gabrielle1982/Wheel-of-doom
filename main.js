@@ -27,11 +27,11 @@ $(document).ready(function () {
             )
          );
 
-         coders.forEach( t => 
-            $('#names').hide(
-                randomName
-            )
-         );
+        //  coders.forEach( t => 
+        //     $('#names').hide(
+        //         randomName
+        //     )
+        //  );
 
      
 }
