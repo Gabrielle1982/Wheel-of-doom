@@ -4,7 +4,7 @@ $(document).ready(function () {
 
      let coders= [ 'Candy', 'Gabrielle', 'Carmen', 'Laura .C', 'Alexia', 
      'Alisa', 'Kristina', 'Helen', 'Ana', 'Anna', 'Yuliya', 'Desiree', 'Laura M.', 'Valentina', 'Gracia', 
-     'Joana', 'Faby', 'Marisa', 'Judith', 'Sonia', 'Tamara', 'Rosa', 'Sandra', 'Sara', 'Marta',
+     'Joana', 'Faby', 'Marisa', 'Judith', 'Sonia', 'Tamara', 'Rosa', 'Sandra', 'Sara', 'Marta', 'Javi'
      ];
      $.each(coders, function(index,value){
         names.append($("<li>"+value+"</li>"))
