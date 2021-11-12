@@ -36,9 +36,12 @@ a:visited, a:link
     color:red;
     
 }
-
+button:hover, img.boton:hover {
+    padding: 10px;
+}
 .boton {
-    height: 150px;
+    height: 200px;
+    position: relative;
     
 }
 /* --------juego---------  */
@@ -48,7 +51,8 @@ a:visited, a:link
     flex-direction: column;
     align-items: center;
     height: 1000px;
-
+    position: relative;
+    justify-content: center;
 }
 .juego > *{
     margin-top:10px;
@@ -67,7 +71,13 @@ h1 {
     padding: 20px;
 } */
 
-
+p {
+    top: 25%;
+    left: 25%;
+    text-align: center;
+    position: absolute;
+    font-weight: bold;
+}
 h2 {
     font-size: 60px;
     padding-top: 40px;
@@ -83,8 +93,11 @@ ul{
 }
 
 
-img{
+img.img-resultado{ 
     height:100%;
+    position:absolute; 
+    align-items: center;
+    justify-content: center;
 }
 
 .botones button{
@@ -101,12 +114,13 @@ img{
     margin-bottom: 0;
     display:flex;
     gap:50px;
-    background-position: center;
-    background-size: cover;
-    justify-content: center;
     width: 100%;
-    height: 200px;
-    margin-top: 0;
+    height: 8%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    justify-content: center;
 }
 
 .resultado {
