@@ -1,8 +1,12 @@
 *{
     font-family: 'Jim Nightshade', cursive;
     margin: 0px;
+   
 }
 
+html {
+     background-color: #c81d11 ;
+}
 .intro{
     height: 900px;
     background-image:url(/img/vodoo_background.jpg);
@@ -46,11 +50,11 @@ button:hover, img.boton:hover {
 }
 /* --------juego---------  */
 .juego {
-    background-color: #c81d11 ;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 800px;
+    height: 900px;
     position: relative;
     justify-content: center;
 }
@@ -81,7 +85,7 @@ p {
 }
 h2 {
     font-size: 60px;
-    padding-top: 40px;
+
 }
 
 ul{
@@ -132,9 +136,11 @@ img.img-resultado{
 }
 
 .humo{
-    position: absolute;
-    left: 150px;
-    bottom: -200px;
+    position:absolute;
+    left: 300px;
+    bottom: -150px;
+    height: 900px;
+    width: 1200px;
 }
 .img-resultado {
     position: relative;
