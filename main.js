@@ -2,9 +2,9 @@ $(document).ready(function () {
     let names = $("#names");
 
 
-     let coders= [ 'Candy', 'Gabrielle', 'Carmen', 'Laura .C', 'Alexia', 
-     'Alisa', 'Kristina', 'Helen', 'Ana', 'Anna', 'Yuliya', 'Desiree', 'Laura M.', 'Valentina', 'Gracia', 
-     'Joana', 'Faby', 'Marisa', 'Judith', 'Sonia', 'Tamara', 'Rosa', 'Sandra', 'Sara', 'Marta',
+     let coders= [ 'Candy ', 'Gabrielle ', 'Carmen ', 'Laura .C ', 'Alexia ', 
+     'Alisa ', 'Kristina ', 'Helen ', 'Ana ', 'Anna ', 'Yuliya ', 'Desiree ', 'Laura M. ', 'Valentina ', 'Gracia ', 
+     'Joana ', 'Faby ', 'Marisa ', 'Judith ', 'Sonia ', 'Tamara ', 'Rosa ', 'Sandra ', 'Sara ', 'Marta ',
      ];
      $.each(coders, function(index,value){
         names.append($("<li>"+value+"</li>"))
@@ -31,7 +31,7 @@ $(document).ready(function () {
 
          ),
          coders.forEach( t => 
-            $("li").hide()
+            $('#names').html(coders)
          )
 
         }       
@@ -51,17 +51,21 @@ $('.start').on('click', pickCoder);
 // BORRAR
 function clearResult() {
     if(coders.length===0){
-        coders=[ 'Candy', 'Gabrielle', 'Carmen', 'Laura .C', 'Alexia', 
-        'Alisa', 'Kristina', 'Helen', 'Ana', 'Anna', 'Yuliya', 'Desiree', 'Laura M.', 'Valentina', 'Gracia', 
-        'Joana', 'Faby', 'Marisa', 'Judith', 'Sonia', 'Tamara', 'Rosa', 'Sandra', 'Sara', 'Marta',
+        coders=[ 'Candy ', 'Gabrielle ', 'Carmen ', 'Laura .C ', 'Alexia ', 
+        'Alisa ', 'Kristina ', 'Helen ', 'Ana ', 'Anna ', 'Yuliya ', 'Desiree ', 'Laura M. ', 'Valentina ', 'Gracia ', 
+        'Joana ', 'Faby ', 'Marisa ', 'Judith ', 'Sonia ', 'Tamara ', 'Rosa ', 'Sandra ', 'Sara ', 'Marta ',
         ];
+        $('.resultado').html("RESTART");
+        $('li').fadeIn();
     }
-    $('.resultado').empty();
-    $('li').fadeIn();
+  
+    // if (li===randomName){
+    //     $('li').remove();
+    // }
 
 }
 
-$('.reset').on("click", clearResult);
+$('.start').on("click", clearResult);
 
 
 });
