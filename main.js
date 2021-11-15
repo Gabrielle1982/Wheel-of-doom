@@ -56,7 +56,7 @@ function clearResult() {
         'Alisa ', 'Kristina ', 'Helen ', 'Ana ', 'Anna ', 'Yuliya ', 'Desiree ', 'Laura M. ', 'Valentina ', 'Gracia ', 
         'Joana ', 'Faby ', 'Marisa ', 'Judith ', 'Sonia ', 'Tamara ', 'Rosa ', 'Sandra ', 'Sara ', 'Marta ',
         ];
-        $('.resultado').html("RESTART");
+        $('.resultado').html("Vuelve a empezar");
         $('li').fadeIn();
     }
   
