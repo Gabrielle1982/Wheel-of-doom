@@ -59,9 +59,7 @@ function clearResult() {
         $('li').fadeIn();
     }
   
-    // if (li===randomName){
-    //     $('li').remove();
-    // }
+
 
 }
 
