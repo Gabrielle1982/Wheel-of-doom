@@ -8,6 +8,11 @@ html {
      background-color: #c81d11 ;
 }
 
+body.dark-theme {
+    background-image: url(/img/snwflks-106.gif);
+
+}
+
 .toggle input[type='checkbox'] {
     display: none;
 }
