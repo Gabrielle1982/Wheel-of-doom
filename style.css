@@ -4,9 +4,6 @@
    
 }
 
-html {
-     background-color: #c81d11 ;
-}
 
 body.dark-theme {
     background-image: url(/img/snwflks-106.gif);
@@ -50,32 +47,6 @@ body.dark-theme {
     background-color: #0054b0;
     transform: translateX(50px);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .intro{
     height: 900px;
@@ -122,13 +93,16 @@ button:hover, img.boton:hover {
 }
 /* --------juego---------  */
 .juego {
-    
+    background-image: url("/img/8.png");
+    width: 1370;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 900px;
     position: relative;
     justify-content: center;
+ 
+   
 }
 .juego > * {
     margin-top:10px;
