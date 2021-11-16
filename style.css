@@ -114,6 +114,16 @@ h1 {
     text-shadow: 1px 10px black;
 }
 
+#names{
+    height: 100px;
+}
+
+/* .night-mode, .header{s
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 20px;
+} */
 
 p {
     top: 25%;
