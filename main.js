@@ -53,7 +53,7 @@ $(document).ready(function() {
         }
     }
     // EJECUTA LA FUNCION DE BORRAR AL HACER CLICK EN START
-    $('.start').on("click", clearResult);
+    // $('.start').on("click", clearResult);
 
 
 
@@ -61,17 +61,20 @@ $(document).ready(function() {
     function Navidad() {
         let copitos = $('.copitos')
         let copitos1 = $('.copitos1')
+        let drFacilier = $('.dr-facilier')
 
         $("input").on('change', function() {
             if ($(".toggle").is(':checked')) {
                 // Hacer algo si el checkbox ha sido seleccionado
                 copitos.attr("src", "/img/snwflks-106.gif");
                 copitos1.attr("src", "/img/snwflks-106.gif");
+                drFacilier.attr("src", "/img/dr.facilitier-navideño.png")
                 console.log("El checkbox ha sido seleccionado");
             } else {
                 // Hacer algo si el checkbox ha sido deseleccionado
                 copitos.removeAttr("src", "/img/snwflks-106.gif");
                 copitos1.removeAttr("src", "/img/snwflks-106.gif");
+                drFacilier.attr("src", "/img/dr.facilitier.png")
                 console.log("El checkbox ha sido deseleccionado");
             }
         });
