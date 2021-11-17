@@ -1,5 +1,5 @@
 *{
-    font-family: 'Jim Nightshade', cursive;
+    
     margin: 0px;
    
 }
@@ -54,6 +54,7 @@
     position: relative;
     flex-direction: column;
     color:red;
+    font-family: 'Jim Nightshade', cursive;
 
 }
 .play-mode {
@@ -130,25 +131,28 @@ h1 {
 p {
     top: 25%;
     left: 25%;
+    font-family: 'Jim Nightshade', cursive;
     text-align: center;
     position: absolute;
     font-weight: bold;
     text-shadow: 1px 5px black;
 }
 h2 {
+    font-family: 'Jim Nightshade', cursive;
     font-size: 60px;
     color:red;
     text-shadow: 3px 4px 0px rgb(14, 13, 13);
 }
 
 ul{
+    font-family: 'Jim Nightshade', cursive;
     display:flex;
     list-style: none;
     gap:10px;
     flex-wrap:wrap ;
     justify-content: center;
     font-size: 40px;
-    height:50px;
+    height:70px;
     color:red;
     text-shadow: 3px 4px 0px rgb(14, 13, 13);
 }
@@ -172,6 +176,7 @@ img.img-resultado{
 }
 
 .botones{
+    font-family: 'Jim Nightshade', cursive;
     margin-bottom: 0;
     display:flex;
     gap:50px;
@@ -189,6 +194,7 @@ img.img-resultado{
     bottom: 20%;
     right: 85%;
     font-size: 90px;
+    font-family: 'Nosifer', cursive;
 }
 .img-resultado {
     position: relative;
