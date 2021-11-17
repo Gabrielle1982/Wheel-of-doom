@@ -148,6 +148,7 @@ ul{
     flex-wrap:wrap ;
     justify-content: center;
     font-size: 40px;
+    height:50px;
     color:red;
     text-shadow: 3px 4px 0px rgb(14, 13, 13);
 }
