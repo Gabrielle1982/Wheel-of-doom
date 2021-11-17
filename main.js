@@ -59,15 +59,20 @@ $('.start').on("click", clearResult);
 
 // /////////////////// MODO NAVIDAD
 function Navidad () {
-
+let copitos= $('.copitos')
+let copitos1= $('.copitos1')
 
     $("input").on( 'change', function() {
         if( $(".toggle").is(':checked') ) {
             // Hacer algo si el checkbox ha sido seleccionado
-            console.log("El checkbox con valor " + $(this).val() + " ha sido seleccionado");
+            copitos.attr("src", "/img/snwflks-106.gif");
+            copitos1.attr("src", "/img/snwflks-106.gif");
+            console.log("El checkbox ha sido seleccionado");
         } else {
             // Hacer algo si el checkbox ha sido deseleccionado
-            console.log("El checkbox con valor " + $(this).val() + " ha sido deseleccionado");
+            copitos.removeAttr("src", "/img/snwflks-106.gif");
+            copitos1.removeAttr("src", "/img/snwflks-106.gif");
+            console.log("El checkbox ha sido deseleccionado");
         }
     });
     
