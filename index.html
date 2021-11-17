@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,65 +9,69 @@
     <link rel="icon" href="img/favicon-16x16.png" type="image/png" />
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
 </head>
+
 <body>
-<!-- PRIMERA PARTE DE LA PAG- INTRO  -->
-<div class="intro" style= "background-image:url(/img/vodoo_background.jpg)"> 
-    <img class="copitos">
-    <div class="toggle">
-        <input class="toggle" type="checkbox" id="toggle" />
-        <label for="toggle"></label>
+    <!-- PRIMERA PARTE DE LA PAG- INTRO  -->
+    <div class="intro" style="background-image:url(/img/vodoo_background.jpg)">
+        <img class="copitos">
+        <div class="toggle">
+            <input class="toggle" type="checkbox" id="toggle" />
+            <label for="toggle"></label>
+        </div>
+
+        <h1>Voodoo</h1>
+        <div class="play-mode">
+            <!-- <button class="play">Play</button>  -->
+            <a href="#juego"> <img class="boton" src="/img/boton.png" />
+
+                <p>Play</p>
+            </a>
+        </div>
+
     </div>
+    <!-- SEGUNDA PARTE - JUEGO     -->
+    <section>
+        <div class="juego" id="juego" style="background-image: url(/img/8.png);">
+            <img class="copitos1">
 
-    <h1>Voodoo</h1>
-    <div class="play-mode">
-        <!-- <button class="play">Play</button>  -->
-
-       <a href="#juego"> <img class="boton" src="/img/boton.png"/>
- 
-     <p>Play</p></a>
-    </div>
-
-</div>
- <!-- SEGUNDA PARTE - JUEGO     -->
-<section>
-<div class="juego" id="juego" style= "background-image: url(/img/8.png);"> 
-<img class="copitos1" >
-    <h2>Presiona Start y la persona seleccionada sufrirá...</h2>
-    
-
-<!---------------------------listado coders---------------------->
-
-<ul id="names">
-    
-
-</ul>
-
-<div class="img-resultado">
-    <img class="dr-facilier" src="img/dr.facilitier.png">
-<div class="resultado">
-</div>
-
-</div>
+            <h2>Presiona Start y la persona seleccionada sufrirá...</h2>
 
 
-</div>
 
-<div class="botones">
-    <button class="start">Start</button>  
-</div>
 
-<script src="https://cdn.rawgit.com/Automattic/expect.js/0.3.1/index.js"></script>
-<script src="https://cdn.rawgit.com/chaijs/chai/3.5.0/chai.js"></script>
-<script src="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.js"></script>
+            <ul id="names">
+
+
+            </ul>
+
+            <div class="img-resultado">
+                <img class="dr-facilier" src="img/dr.facilitier.png">
+
+                <div class="resultado">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="botones">
+            <button class="start">Start</button>
+        </div>
+        </div>
+
+        <script src="https://cdn.rawgit.com/Automattic/expect.js/0.3.1/index.js"></script>
+        <script src="https://cdn.rawgit.com/chaijs/chai/3.5.0/chai.js"></script>
+        <script src="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.js"></script>
 
 </body>
-
-
 
 
 </html>
