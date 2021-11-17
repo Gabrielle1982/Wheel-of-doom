@@ -150,7 +150,7 @@ p {
 h2 {
     font-family: 'Jim Nightshade', cursive;
     font-size: 60px;
-    color: red;
+    color: white;
     text-shadow: 3px 4px 0px rgb(14, 13, 13);
 }
 
@@ -162,7 +162,7 @@ ul {
     flex-wrap: wrap;
     justify-content: center;
     font-size: 40px;
-    color: red;
+    color: white;
     text-shadow: 3px 4px 0px rgb(14, 13, 13);
 }
 
