@@ -48,10 +48,10 @@ $(document).ready(function() {
             ];
             // CUANDO NO QUEDEN MÁS OPCIONES, DA UN MENSAJE
             $('.resultado').html("Vuelve a empezar");
-            $('.resultado').fadeIn();
+            
             
             // EFECTO FADE PARA LOS NOMBRES
-            $('li').fadeIn();
+        
         }
     }
     // EJECUTA LA FUNCION DE BORRAR AL HACER CLICK EN START
