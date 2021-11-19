@@ -50,13 +50,17 @@ $(document).ready(function() {
                 $('.resultado').html(
                     randomName)),
 
-            // POR CADA RESULTADO, QUITALO DE LA LISTA EN EL HTML
-            coders.forEach(t =>
-                $('#names').html(coders)
-            )
+            $('.resultado').show();
+
+        // POR CADA RESULTADO, QUITALO DE LA LISTA EN EL HTML
+        coders.forEach(t =>
+            $('#names').html(coders)
+        )
 
     }
     $('.restart').hide();
+    $('#names').show();
+
     // EJECUTA LA FUNCION AL HACER CLICK EN START
     $('.start').on('click', pickCoder);
 
@@ -73,6 +77,7 @@ $(document).ready(function() {
             // CUANDO NO QUEDEN MÁS OPCIONES, DA UN MENSAJE
 
             $('.resultado').html("Game Over");
+            $('.resultado').show();
             $('.start').hide();
             $('.restart').show();
 
@@ -80,7 +85,7 @@ $(document).ready(function() {
 
             // EFECTO FADE PARA LOS NOMBRES
 
-        }
+        } else { $('#names').show(); }
     }
 
 
@@ -88,17 +93,13 @@ $(document).ready(function() {
     $('.start').on("click", clearResult);
 
     function reset() {
-        if (coders.length === 0) {
 
-            coders = ['Candy ', 'Gabrielle ', 'Carmen ', 'Laura .C ', 'Alexia ',
-                'Alisa ', 'Kristina ', 'Helen ', 'Ana ', 'Anna ', 'Yuliya ', 'Desiree ', 'Laura M. ', 'Valentina ', 'Gracia ',
-                'Joana ', 'Faby ', 'Marisa ', 'Judith ', 'Sonia ', 'Tamara ', 'Rosa ', 'Sandra ', 'Sara ', 'Marta ',
-            ];
 
-        }
+
 
         $('.start').show();
         $('.restart').hide();
+        $('.resultado').hide();
 
 
     }
