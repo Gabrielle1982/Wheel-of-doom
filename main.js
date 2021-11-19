@@ -1,3 +1,24 @@
+function pickCoder() {
+
+    let random = Math.floor((Math.random() * coders.length));
+    let randomName = coders[random];
+    console.log(randomName);
+
+
+}
+let coders = ['Candy ', 'Gabrielle ', 'Carmen ', 'Laura .C ', 'Alexia ',
+    'Alisa ', 'Kristina ', 'Helen ', 'Ana ', 'Anna ', 'Yuliya ', 'Desiree ', 'Laura M. ', 'Valentina ', 'Gracia ',
+    'Joana ', 'Faby ', 'Marisa ', 'Judith ', 'Sonia ', 'Tamara ', 'Rosa ', 'Sandra ', 'Sara ', 'Marta ',
+];
+
+let random = Math.floor((Math.random() * coders.length));
+
+
+
+
+
+
+
 $(document).ready(function() {
     // DECLARACION DE NOMBRES
     let names = $("#names");
@@ -8,7 +29,7 @@ $(document).ready(function() {
         'Alisa ', 'Kristina ', 'Helen ', 'Ana ', 'Anna ', 'Yuliya ', 'Desiree ', 'Laura M. ', 'Valentina ', 'Gracia ',
         'Joana ', 'Faby ', 'Marisa ', 'Judith ', 'Sonia ', 'Tamara ', 'Rosa ', 'Sandra ', 'Sara ', 'Marta ',
     ];
-    
+
 
     //  POR CADA RESULTADO, AÑADE UN LI
     $.each(coders, function(index, value) {
@@ -45,17 +66,17 @@ $(document).ready(function() {
     function clearResult() {
         if (coders.length === 0) {
             coders = ['Candy ', 'Gabrielle ', 'Carmen ', 'Laura .C ', 'Alexia ',
-            'Alisa ', 'Kristina ', 'Helen ', 'Ana ', 'Anna ', 'Yuliya ', 'Desiree ', 'Laura M. ', 'Valentina ', 'Gracia ',
-            'Joana ', 'Faby ', 'Marisa ', 'Judith ', 'Sonia ', 'Tamara ', 'Rosa ', 'Sandra ', 'Sara ', 'Marta ',
-        ];
+                'Alisa ', 'Kristina ', 'Helen ', 'Ana ', 'Anna ', 'Yuliya ', 'Desiree ', 'Laura M. ', 'Valentina ', 'Gracia ',
+                'Joana ', 'Faby ', 'Marisa ', 'Judith ', 'Sonia ', 'Tamara ', 'Rosa ', 'Sandra ', 'Sara ', 'Marta ',
+            ];
             $('#names').hide();
             // CUANDO NO QUEDEN MÁS OPCIONES, DA UN MENSAJE
 
             $('.resultado').html("Game Over");
             $('.start').hide();
             $('.restart').show();
-            
-            
+
+
 
             // EFECTO FADE PARA LOS NOMBRES
 
@@ -66,23 +87,23 @@ $(document).ready(function() {
     // EJECUTA LA FUNCION DE BORRAR AL HACER CLICK EN START
     $('.start').on("click", clearResult);
 
-    function reset (){
-        if (coders.length === 0){
-          
+    function reset() {
+        if (coders.length === 0) {
+
             coders = ['Candy ', 'Gabrielle ', 'Carmen ', 'Laura .C ', 'Alexia ',
-            'Alisa ', 'Kristina ', 'Helen ', 'Ana ', 'Anna ', 'Yuliya ', 'Desiree ', 'Laura M. ', 'Valentina ', 'Gracia ',
-            'Joana ', 'Faby ', 'Marisa ', 'Judith ', 'Sonia ', 'Tamara ', 'Rosa ', 'Sandra ', 'Sara ', 'Marta ',
-        ];
-            
+                'Alisa ', 'Kristina ', 'Helen ', 'Ana ', 'Anna ', 'Yuliya ', 'Desiree ', 'Laura M. ', 'Valentina ', 'Gracia ',
+                'Joana ', 'Faby ', 'Marisa ', 'Judith ', 'Sonia ', 'Tamara ', 'Rosa ', 'Sandra ', 'Sara ', 'Marta ',
+            ];
+
         }
 
         $('.start').show();
         $('.restart').hide();
 
 
-        }
+    }
 
-     $('.restart').on("click", reset);
+    $('.restart').on("click", reset);
 
 
 
