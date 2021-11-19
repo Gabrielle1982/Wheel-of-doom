@@ -161,12 +161,15 @@ h2 {
 
 #contenedorLista{
     max-width: 1000%;
-    height: 4000px;;
+    height: 200px;;
     background-color: #7e1a1a;
+  
     
 }
 
 ul {
+    position:absolute;
+    left:1500px;
     font-family: 'Jim Nightshade', cursive;
     display: flex;
     list-style: none;
@@ -188,6 +191,7 @@ img.img-resultado {
 .dr-facilier {
     
     margin-top: -10%;
+    
     
 }
 
