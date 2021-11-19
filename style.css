@@ -124,10 +124,8 @@ img.boton:hover {
     align-items: center;
     height: 800px;
     justify-content: center;
-
     padding-top: 3%;
     background-image: url("img/fondo.jpeg");
-
 }
 
 .juego>* {
@@ -159,18 +157,17 @@ h2 {
     text-shadow: 3px 4px 0px rgb(14, 13, 13);
 }
 
-#contenedorLista{
+#contenedorLista {
     max-width: 1000%;
-    height: 200px;;
+    height: 200px;
     background-color: #7e1a1a;
-  
-    
+    z-index: 1;
 }
 
 ul {
-    position:absolute;
-    left:250px;
-    right:250px;
+    position: absolute;
+    left: 250px;
+    right: 250px;
     font-family: 'Jim Nightshade', cursive;
     display: flex;
     list-style: none;
@@ -190,10 +187,8 @@ img.img-resultado {
 }
 
 .dr-facilier {
-    
     margin-top: -10%;
-    
-    
+    z-index: 0;
 }
 
 .botones button {
@@ -226,6 +221,7 @@ img.img-resultado {
     right: 70%;
     font-size: 90px;
     font-family: 'Nosifer', cursive;
+    text-shadow: 1px -3px white;
 }
 
 .img-resultado {
