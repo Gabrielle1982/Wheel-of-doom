@@ -169,8 +169,8 @@ h2 {
 
 ul {
     position:absolute;
-    left:850px;
-    right:850px;
+    left:250px;
+    right:250px;
     font-family: 'Jim Nightshade', cursive;
     display: flex;
     list-style: none;
