@@ -1,3 +1,24 @@
+function pickCoder() {
+
+    let random = Math.floor((Math.random() * coders.length));
+    let randomName = coders[random];
+    console.log(randomName);
+
+
+}
+let coders = ['Candy ', 'Gabrielle ', 'Carmen ', 'Laura .C ', 'Alexia ',
+    'Alisa ', 'Kristina ', 'Helen ', 'Ana ', 'Anna ', 'Yuliya ', 'Desiree ', 'Laura M. ', 'Valentina ', 'Gracia ',
+    'Joana ', 'Faby ', 'Marisa ', 'Judith ', 'Sonia ', 'Tamara ', 'Rosa ', 'Sandra ', 'Sara ', 'Marta ',
+];
+
+let random = Math.floor((Math.random() * coders.length));
+
+
+
+
+
+
+
 $(document).ready(function() {
     // DECLARACION DE NOMBRES
     let names = $("#names");
@@ -8,7 +29,7 @@ $(document).ready(function() {
         'Alisa ', 'Kristina ', 'Helen ', 'Ana ', 'Anna ', 'Yuliya ', 'Desiree ', 'Laura M. ', 'Valentina ', 'Gracia ',
         'Joana ', 'Faby ', 'Marisa ', 'Judith ', 'Sonia ', 'Tamara ', 'Rosa ', 'Sandra ', 'Sara ', 'Marta ', 'Javi ',
     ];
-    
+
 
     //  POR CADA RESULTADO, AÑADE UN LI
     $.each(coders, function(index, value) {
@@ -29,12 +50,12 @@ $(document).ready(function() {
                 $('.resultado').html(
                     randomName)),
 
-                    $('.resultado').show();
+            $('.resultado').show();
 
-            // POR CADA RESULTADO, QUITALO DE LA LISTA EN EL HTML
-            coders.forEach(t =>
-                $('#names').html(coders)
-            )
+        // POR CADA RESULTADO, QUITALO DE LA LISTA EN EL HTML
+        coders.forEach(t =>
+            $('#names').html(coders)
+        )
 
     }
     $('.restart').hide();
@@ -49,9 +70,11 @@ $(document).ready(function() {
     function clearResult() {
         if (coders.length === 0) {
             coders = ['Candy ', 'Gabrielle ', 'Carmen ', 'Laura .C ', 'Alexia ',
+
             'Alisa ', 'Kristina ', 'Helen ', 'Ana ', 'Anna ', 'Yuliya ', 'Desiree ', 'Laura M. ', 'Valentina ', 'Gracia ',
             'Joana ', 'Faby ', 'Marisa ', 'Judith ', 'Sonia ', 'Tamara ', 'Rosa ', 'Sandra ', 'Sara ', 'Marta ', 'Javi ',
         ];
+
             $('#names').hide();
             // CUANDO NO QUEDEN MÁS OPCIONES, DA UN MENSAJE
 
@@ -59,32 +82,31 @@ $(document).ready(function() {
             $('.resultado').show();
             $('.start').hide();
             $('.restart').show();
-            
-            
+
+
 
             // EFECTO FADE PARA LOS NOMBRES
 
-        }else{$('#names').show();}
+
+        } else { $('#names').show(); }
+
     }
 
 
     // EJECUTA LA FUNCION DE BORRAR AL HACER CLICK EN START
     $('.start').on("click", clearResult);
 
-    function reset (){
-       
-          
-  
+    function reset() {
 
         $('.start').show();
         $('.restart').hide();
         $('.resultado').hide();
-       
 
-    
-        }
+    }
 
-     $('.restart').on("click", reset);
+
+
+    $('.restart').on("click", reset);
 
 
 
