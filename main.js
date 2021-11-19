@@ -71,9 +71,9 @@ $(document).ready(function() {
         if (coders.length === 0) {
             coders = ['Candy ', 'Gabrielle ', 'Carmen ', 'Laura .C ', 'Alexia ',
 
-            'Alisa ', 'Kristina ', 'Helen ', 'Ana ', 'Anna ', 'Yuliya ', 'Desiree ', 'Laura M. ', 'Valentina ', 'Gracia ',
-            'Joana ', 'Faby ', 'Marisa ', 'Judith ', 'Sonia ', 'Tamara ', 'Rosa ', 'Sandra ', 'Sara ', 'Marta ', 'Javi ',
-        ];
+                'Alisa ', 'Kristina ', 'Helen ', 'Ana ', 'Anna ', 'Yuliya ', 'Desiree ', 'Laura M. ', 'Valentina ', 'Gracia ',
+                'Joana ', 'Faby ', 'Marisa ', 'Judith ', 'Sonia ', 'Tamara ', 'Rosa ', 'Sandra ', 'Sara ', 'Marta ', 'Javi ',
+            ];
 
             $('#names').hide();
             // CUANDO NO QUEDEN MÁS OPCIONES, DA UN MENSAJE
@@ -115,14 +115,14 @@ $(document).ready(function() {
         let copitos = $('.copitos')
         let copitos1 = $('.copitos1')
         let drFacilier = $('.dr-facilier')
-        let source = '/img/snwflks-106.gif'
+        let source = 'img/snwflks-106.gif'
 
         $("input").on('change', function() {
             if ($(".toggle").is(':checked')) {
                 // Hacer algo si el checkbox ha sido seleccionado
                 copitos.attr("src", source);
                 copitos1.attr("src", source);
-                drFacilier.attr("src", "/img/dr.facilitier-navideño.png")
+                drFacilier.attr("src", "img\dr.facilitier-navideno.png")
                 copitos.css("background-image", "url(" + source + ")");
                 copitos1.css("background-image", "url(" + source + ")");
                 copitos.css("width", "100%")
@@ -130,11 +130,11 @@ $(document).ready(function() {
                 console.log("El checkbox ha sido seleccionado");
             } else {
                 // Hacer algo si el checkbox ha sido deseleccionado
-                copitos.removeAttr("src", "/img/snwflks-106.gif");
-                copitos1.removeAttr("src", "/img/snwflks-106.gif");
+                copitos.removeAttr("src", "img\snwflks-106.gif");
+                copitos1.removeAttr("src", "img\snwflks-106.gif");
                 copitos.removeAttr("style");
                 copitos1.removeAttr("style")
-                drFacilier.attr("src", "/img/dr.facilitier.png")
+                drFacilier.attr("src", "img\dr.facilitier.png")
 
 
                 console.log("El checkbox ha sido deseleccionado");
