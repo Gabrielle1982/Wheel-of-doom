@@ -122,7 +122,7 @@ $(document).ready(function() {
                 // Hacer algo si el checkbox ha sido seleccionado
                 copitos.attr("src", source);
                 copitos1.attr("src", source);
-                drFacilier.attr("src", "img\dr.facilitier-navideno.png")
+                drFacilier.attr("src", "img\dr-facilitier-navideno.png")
                 copitos.css("background-image", "url(" + source + ")");
                 copitos1.css("background-image", "url(" + source + ")");
                 copitos.css("width", "100%")
@@ -134,7 +134,7 @@ $(document).ready(function() {
                 copitos1.removeAttr("src", "img\snwflks-106.gif");
                 copitos.removeAttr("style");
                 copitos1.removeAttr("style")
-                drFacilier.attr("src", "img\dr.facilitier.png")
+                drFacilier.attr("src", "img\dr-facilitier.png")
 
 
                 console.log("El checkbox ha sido deseleccionado");
