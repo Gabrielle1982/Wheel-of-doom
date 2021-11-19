@@ -134,7 +134,7 @@ $(document).ready(function() {
                 copitos1.removeAttr("src", "img\snwflks-106.gif");
                 copitos.removeAttr("style");
                 copitos1.removeAttr("style")
-                drFacilier.attr("src", "img\dr-facilitier.png")
+                drFacilier.attr("src", "img/dr-facilitier.png")
 
 
                 console.log("El checkbox ha sido deseleccionado");
