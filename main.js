@@ -85,7 +85,9 @@ $(document).ready(function() {
 
             // EFECTO FADE PARA LOS NOMBRES
 
+
         } else { $('#names').show(); }
+
     }
 
 
@@ -94,15 +96,13 @@ $(document).ready(function() {
 
     function reset() {
 
-
-
-
         $('.start').show();
         $('.restart').hide();
         $('.resultado').hide();
 
-
     }
+
+
 
     $('.restart').on("click", reset);
 
